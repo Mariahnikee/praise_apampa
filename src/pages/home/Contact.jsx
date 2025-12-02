@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { Calendar, Clock, User, Mail, Phone, CheckCircle } from 'lucide-react';
 
-const Booking = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -34,7 +35,7 @@ const Booking = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-purple-300 to-purple-400 text-black py-20">
+      <div className="bg-linear-to-r from-purple-300 to-purple-400 text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-2">Booking</h1>
           <p className="flex items-center justify-center text-lg">
@@ -258,4 +259,4 @@ const Booking = () => {
   );
 };
 
-export default Booking;
+export default Contact;

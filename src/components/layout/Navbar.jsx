@@ -12,33 +12,33 @@ const Navbar = () => {
       <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-[#cae2e4]">
         <div className="flex justify-between items-center h-20 px-4 md:px-[180px]">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-purple-600">
-            Dola Bankole
+          <Link to="/" className="text-2xl font-bold text-indigo-900 hover:text-indigo-800">
+           Praise Apampa
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-10 text-gray-700 font-semibold">
-            <Link to="/" className="hover:text-purple-600 transition">
+            <Link to="/" className="hover:text-indigo-900 transition">
               Home
             </Link>
-             <Link to="/resources" className="hover:text-purple-600 transition">
-              Resources
+             <Link to="/about" className="hover:text-indigo-900 transition">
+              About
             </Link>
-            <Link to="/event" className="hover:text-purple-600 transition">
-              Mission & Events
+            <Link to="/workshop" className="hover:text-indigo-900 transition">
+              In-Person Workshop
             </Link>
-             <Link to="/booking" className="hover:text-purple-600 transition">
-              Bookings
+             <Link to="/podcasts" className="hover:text-indigo-900 transition">
+              Podcasts
             </Link>
           </nav>
 
           {/* CTA (desktop only) */}
           <div className="hidden md:block">
             <Link
-              to="/booking"
-              className="bg-purple-600 text-white font-medium px-5 py-2 rounded-[6px] hover:bg-purple-700 transition"
+              to="/contact"
+              className="bg-indigo-900  text-white font-medium px-5 py-2 rounded-md hover:bg-indigo-800 transition"
             >
-              Invite Dola
+              Contact
             </Link>
           </div>
 
@@ -62,28 +62,28 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/resources"
+              to="/"
               className="block text-gray-700 hover:text-purple-600"
               onClick={toggleMenu}
             >
-              Resources
+              About
             </Link>
              <Link
-              to="/event"
+              to="/about"
               className="block text-gray-700 hover:text-purple-600"
               onClick={toggleMenu}
             >
-              Mission & Events
+              In-Person Workshop
             </Link>
             <Link
-              to="/booking"
+              to="/workshop"
               className="block text-gray-700 hover:text-purple-600"
               onClick={toggleMenu}
             >
-              Bookings
+              Podcast
             </Link>
             <Link
-              to="/bookings"
+              to="/podcast"
               className="block bg-purple-600 text-white px-4 py-2 rounded-lg text-center hover:bg-purple-700"
               onClick={toggleMenu}
             >
